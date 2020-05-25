@@ -13,7 +13,7 @@
   border-radius: 21.5px;
   border: 1px solid;
   padding: 11px 0;
-  border-color: #1B9B7F;
+  border-color: #1b9b7f;
 }
 
 .menu .btn-register {
@@ -23,14 +23,100 @@
   border: 1px solid;
   padding: 11px 0;
   color: white !important;
-  background-color: #1B9B7F;
+  background-color: #1b9b7f;
 }
 
 .menu .btn-register:hover {
-  background-color: #1B9B7F !important;
+  background-color: #1b9b7f !important;
 }
 
 .register_login {
   overflow: hidden;
+}
+
+.register_login .col-right {
+  padding: 0 370px 0 125px;
+}
+
+.register_login .col-right .form .nav-tabs {
+  border-bottom: 1.5px solid #e9e9eb;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.register_login .col-right .form .nav-tabs a {
+  margin-right: 30px;
+  color: black;
+  border: none;
+}
+
+.register_login .col-right .form .nav-tabs a:hover {
+  background-color: unset;
+}
+
+.register_login .col-right .form .nav-tabs li.active a {
+  border: none;
+  border-bottom: 1.5px solid #1b9b7f;
+}
+
+.register_login .col-right .form .tab-content {
+  margin-top: 40px;
+}
+
+.register_login .col-right .form .input-group {
+  border-radius: 34px;
+  margin-bottom: 24px;
+}
+
+.register_login .col-right .form .input-group span {
+  border: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+  border-top-left-radius: 34px;
+  border-bottom-left-radius: 34px;
+  padding: 0 20px 0 50px;
+  text-align: right;
+  height: 52px;
+}
+
+.register_login .col-right .form .input-group input {
+  height: 52px;
+  border: none;
+  -webkit-box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+  border-top-right-radius: 34px;
+  border-bottom-right-radius: 34px;
+}
+
+.register_login .title1 {
+  margin-top: 120px;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.register_login .description {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #647993;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  height: 72px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.frame {
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=custom.css.map */
