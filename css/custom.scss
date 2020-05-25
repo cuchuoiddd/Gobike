@@ -1,0 +1,33 @@
+$color_background:#1B9B7F;
+$color_text:#2DA289;
+.menu{
+    .li-login{
+        margin-top: 5px;
+        padding: 0 15px;
+    }
+    .li-register{
+        margin-top: 5px;
+        
+    }
+    .btn-login{
+        width: 114px;
+        height: 43px;
+        border-radius: 21.5px;
+        border: 1px solid;
+        padding: 11px 0;
+        border-color: $color_background;
+    }
+    .btn-register{
+        width: 114px;
+        height: 43px;
+        border-radius: 21.5px;
+        border: 1px solid;
+        padding: 11px 0;
+        color: white !important;
+        background-color: $color_background;
+        &:hover{
+            background-color: $color_background !important;
+        }
+        
+    }
+}

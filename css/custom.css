@@ -1,0 +1,32 @@
+.menu .li-login {
+  margin-top: 5px;
+  padding: 0 15px;
+}
+
+.menu .li-register {
+  margin-top: 5px;
+}
+
+.menu .btn-login {
+  width: 114px;
+  height: 43px;
+  border-radius: 21.5px;
+  border: 1px solid;
+  padding: 11px 0;
+  border-color: #1B9B7F;
+}
+
+.menu .btn-register {
+  width: 114px;
+  height: 43px;
+  border-radius: 21.5px;
+  border: 1px solid;
+  padding: 11px 0;
+  color: white !important;
+  background-color: #1B9B7F;
+}
+
+.menu .btn-register:hover {
+  background-color: #1B9B7F !important;
+}
+/*# sourceMappingURL=custom.css.map */
