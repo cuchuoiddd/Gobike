@@ -1,10 +1,10 @@
 .menu .li-login {
-  margin-top: 5px;
+  margin-top: 4px;
   padding: 0 15px;
 }
 
 .menu .li-register {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .menu .btn-login {
@@ -28,5 +28,9 @@
 
 .menu .btn-register:hover {
   background-color: #1B9B7F !important;
+}
+
+.register_login {
+  overflow: hidden;
 }
 /*# sourceMappingURL=custom.css.map */

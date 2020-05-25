@@ -2,11 +2,11 @@ $color_background:#1B9B7F;
 $color_text:#2DA289;
 .menu{
     .li-login{
-        margin-top: 5px;
+        margin-top: 4px;
         padding: 0 15px;
     }
     .li-register{
-        margin-top: 5px;
+        margin-top: 4px;
         
     }
     .btn-login{
@@ -30,4 +30,7 @@ $color_text:#2DA289;
         }
         
     }
+}
+.register_login{
+    overflow: hidden;
 }
