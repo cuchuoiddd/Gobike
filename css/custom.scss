@@ -40,7 +40,8 @@ $color_text: #2da289;
 }
 
 .register_login {
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   .col-right {
     padding: 0 370px 0 125px;
     .forget-password {
@@ -86,22 +87,32 @@ $color_text: #2da289;
       .input-group {
         border-radius: 34px;
         margin-bottom: 24px;
+        box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+
         span {
           border: none;
           background: #ffffff;
-          box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
           border-top-left-radius: 34px;
           border-bottom-left-radius: 34px;
-          padding: 0 20px 0 50px;
           text-align: right;
           height: 52px;
+          padding: 0;
+          .icon {
+            padding: 0 20px 0 50px;
+            border-right: 1px solid #c4c4c4;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
         }
         input {
           height: 52px;
           font-size: 20px;
           border: none;
-          box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+          box-shadow: none;
           border-top-right-radius: 34px;
+          padding-left: 21px;
           border-bottom-right-radius: 34px;
         }
       }
@@ -249,7 +260,7 @@ $color_text: #2da289;
       ul {
         padding-left: 0px;
         li.active {
-          a{
+          a {
             font-weight: 600;
             color: $color_background;
           }
@@ -257,7 +268,7 @@ $color_text: #2da289;
         li {
           list-style: none;
           margin-bottom: 17px;
-          a{
+          a {
             font-size: 14px;
             color: #000000;
           }
@@ -354,8 +365,233 @@ $color_text: #2da289;
   }
 }
 
-.product-detail{
-  .detail-right{
+.product-detail {
+  .detail-right {
     margin-top: 44px;
+    .title1 {
+      font-weight: 600;
+      font-size: 40px;
+    }
+    .price {
+      font-weight: 600;
+      font-size: 20px;
+      color: $color_text;
+      margin-top: 20px;
+    }
+    .description {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: justify;
+      margin-bottom: 24px;
+      color: #000000;
+    }
+    .category {
+      margin-top: 24px;
+      a {
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+        color: #000;
+      }
+    }
+    .new-bike {
+      font-size: 16px;
+      margin-top: 20px;
+      color: #000;
+      a {
+        cursor: pointer;
+      }
+    }
+    .share {
+      margin-top: 24px;
+      font-weight: 600;
+      font-size: 16px;
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000;
+      }
+    }
+    .line {
+      width: 36px;
+      height: 0px;
+      left: 1167px;
+      top: 626px;
+      border: 1px solid #c4c4c4;
+    }
+    .social {
+      margin-left: 0;
+      margin-top: 20px;
+      .social_child{
+        display: flex;
+        div{margin-right: 12px;}
+        button {
+          border: 1px solid #c4c4c4;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          background: no-repeat;
+        }
+      }
+    }
+  }
+
+  .main-slider {
+    width: 100%;
+
+    .owl-stage {
+      background-color: rgba(30, 144, 255, 0.8);
+    }
+
+    .owl-item {
+      padding: 0;
+      position: relative;
+      opacity: 0.5;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 350px;
+      }
+    }
+    .center {
+      opacity: 1;
+      transform: scale(1.005);
+      transition: 0.5s ease-in-out;
+      z-index: 9999;
+      .item {
+        display: flex;
+        height: 449px;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+      }
+    }
+
+    .owl-controls .owl-nav {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      .prev {
+        position: absolute;
+        height: 80%;
+        width: 15%;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .next {
+        position: absolute;
+        height: 80%;
+        width: 15%;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .owl-thumbs {
+      text-align: center;
+      display: table;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .owl-thumb-item {
+      width: 90px;
+      height: 90px;
+      border: none;
+      background: none;
+      padding: 0;
+      opacity: 0.7;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .owl-thumb-item img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    .owl-thumb-item.active {
+      &:focus {
+        outline: none;
+      }
+      opacity: 1;
+      img {
+        position: relative;
+      }
+    }
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: black;
+  }
+
+  .quantity {
+    #qty_input {
+      text-align: center;
+      background: #fff;
+      width: 96px;
+      height: 49px;
+      border: 1px solid #c4c4c4;
+      box-sizing: border-box;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .btn-dark {
+      background: #fff;
+      border: none;
+    }
+    button#minus-btn {
+      position: absolute;
+      left: 2px;
+      z-index: 10;
+      top: 12px;
+      &:focus {
+        outline: none;
+      }
+    }
+    button#plus-btn {
+      position: absolute;
+      right: 2px;
+      z-index: 10;
+      top: 12px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .add-to-cart {
+    button {
+      width: 139px;
+      height: 49px;
+      background: #ffffff;
+      border: 1px solid $color_background;
+      box-sizing: border-box;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 16px;
+      color: $color_background;
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }
