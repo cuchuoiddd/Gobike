@@ -63,7 +63,8 @@
             <div class="container">
                 <a href="./index.html">Trang chủ</a> >
                 <a href="./tram-xe.html">Trạm xe</a> >
-                <a href="#">Sava Bike Việt Nam</a>
+                <a href="./product.html">Sava Bike Việt Nam</a> >
+                <a href="#">Blue CS</a>
             </div>
         </div>
         <div class="content">
@@ -177,7 +178,58 @@
             </div>
             <hr>
             <div class="container">
-                Related products
+                <p class="related-products">Related products</p>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-slider owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="card text-center">
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <p class="card-text">250.000 VNĐ / giờ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card text-center">
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <p class="card-text">250.000 VNĐ / giờ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card text-center">
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <p class="card-text">250.000 VNĐ / giờ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card text-center">
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <p class="card-text">250.000 VNĐ / giờ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card text-center">
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <p class="card-text">250.000 VNĐ / giờ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
     </div>
@@ -199,6 +251,24 @@
             });
         });
 
+        $('.product-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+        
+
 
 
         $(document).ready(function () {
@@ -211,7 +281,6 @@
                 if ($('#qty_input').val() == 0) {
                     $('#qty_input').val(1);
                 }
-
             });
         });
 

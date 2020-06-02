@@ -423,9 +423,11 @@ $color_text: #2da289;
     .social {
       margin-left: 0;
       margin-top: 20px;
-      .social_child{
+      .social_child {
         display: flex;
-        div{margin-right: 12px;}
+        div {
+          margin-right: 12px;
+        }
         button {
           border: 1px solid #c4c4c4;
           border-radius: 50%;
@@ -591,6 +593,76 @@ $color_text: #2da289;
       color: $color_background;
       &:focus {
         outline: none;
+      }
+    }
+  }
+  .related-products {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .product-slider {
+    margin-top: 24px;
+    position: relative;
+    .owl-dots {
+      display: none;
+    }
+    .owl-thumbs {
+      display: none;
+    }
+    .owl-nav {
+      .owl-prev {
+        position: absolute;
+        top: 40%;
+        left: -50px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+        &:focus{
+          outline: none;  
+        }
+        span {
+          font-size: 50px;
+          line-height: 30px;
+          color: #000;
+        }
+      }
+      .owl-next {
+        position: absolute;
+        top: 40%;
+        right: -50px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+        &:focus{
+          outline: none;  
+        }
+        span {
+          font-size: 50px;
+          line-height: 30px;
+          color: #000;
+        }
+      }
+    }
+    .card {
+      box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+      .card-img-top {
+        border-bottom: 1px solid #c4c4c4;
+      }
+      .card-title {
+        color: #000;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 25px 0 16px 0;
+      }
+      .card-text {
+        padding-bottom: 14px;
+        color: $color_text;
+        font-weight: 500;
+        font-size: 20px;
       }
     }
   }
