@@ -19,7 +19,7 @@
 </head>
 
 <body data-spy="scroll">
-    <div class="product">
+    <div class="profile">
         <div class="menu" id="gobike">
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
@@ -58,16 +58,169 @@
         <div class="breadcrumb">
             <div class="container">
                 <a href="./index.html">Trang chủ</a> >
-                <a href="./tram-xe.html">Trạm xe</a> > 
-                <a href="#">Sava Bike Việt Nam</a>
+                <a href="#">Bánh Bèo</a>
             </div>
         </div>
-        
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-left">
+                        <div>
+                            <button class="customer active">Trang cá nhân</button>
+                        </div>
+                        <div>
+                            <button class="cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-right" id="customer" style="display: none;">
+                        <di class="">
+                            <h1 class="title1">Thông tin cá nhân</h1>
+                        </di>
+                        <div class="row">
+                            <div class="col-md-6 cmt">
+                                <div class="image">
+                                    <img id="blah" src="images/images/image_74.png" alt="">
+                                    <button class="pen">
+                                        <img src="images/images/pen.png" alt="">
+                                    </button>
+                                    <input type="file" id="imgInp" style="display: none;">
+                                </div>
+                                <p class="p1">Ảnh chụp cùng CMND</p>
+                                <p class="name">Bánh Bèo</p>
+                                <p class="email">haunguyen@gmail.com</p>
+                            </div>
+                            <div class="col-md-6 info">
+                                <div class="row item">
+                                    <div class="col-md-4 text-right"><label>Tên</label></div>
+                                    <div class="col-md-8"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="row item">
+                                    <div class="col-md-4 text-right"><label>Email</label></div>
+                                    <div class="col-md-8"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="row item">
+                                    <div class="col-md-4 text-right"><label>Số điện thoại</label></div>
+                                    <div class="col-md-8"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="row item">
+                                    <div class="col-md-4 text-right"><label>Ngày sinh</label></div>
+                                    <div class="col-md-8">
+                                        <select name="" id="" class="day form-control">
+                                            
+                                        </select>
+                                        <select name="" id="" class="month form-control">
+                                            
+                                        </select>
+                                        <select name="" id="" class="year form-control">
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row item">
+                                    <div class="col-md-4 text-right"><label>CMND</label></div>
+                                    <div class="col-md-8"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="row item">
+                                    <div class="col-md-4 text-right"></div>
+                                    <div class="col-md-8">
+                                        <button class="update"> Cập nhật thông tin</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-right" id="cart" >
+                        <div class="">
+                            <h1 class="title1">Giỏ hàng</h1>
+                        </div>
+                        <div class="status">
+                            <div class="cho-xac-nhan active">
+                                <label for="">Chờ xác nhận</label>
+                                <div class="border"></div>
+                            </div>
+                            <div class="da-giao">
+                                <label for="">Đã giao</label>
+                            </div>
+                        </div>
+                        <div class="item detail">
+                            <div class="img">
+                                <img src="images/images/img_card.png" alt="">
+                            </div>
+                            <div class="aa"></div>
+                            <div class="price"></div>
+                            <div class="quantity"></div>
+                            <div class="action"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer">
             <p>© 2019 Gobike. All rights reserved.</p>
         </div>
     </div>
     <script src="js/script.js"></script>
+    <script>
+        $(document).on('click', '.profile .customer', function () {
+            $(this).addClass('active');
+            $('.profile .cart').removeClass('active');
+            $('.profile #customer').show();
+            $('.profile #cart').hide();
+        })
+        $(document).on('click', '.profile .cart', function () {
+            $(this).addClass('active');
+            $('.profile .customer').removeClass('active');
+            $('.profile #cart').show();
+            $('.profile #customer').hide();
+        })
+
+        $(document).on('click','.pen',function(){
+            $('#imgInp').click();
+        })
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    $('#blah').attr('src', e.target.result);
+                }
+                
+                reader.readAsDataURL(input.files[0]); // convert to base64 string
+            }
+            }
+
+        $("#imgInp").change(function() {
+            readURL(this);
+        });
+
+        $(document).ready(function(){
+            let row_day = $('body').find('.day');
+            let row_month = $('body').find('.month');
+            let row_year = $('body').find('.year');
+            let day = '';
+            let month = '';
+            let year = '';
+            for(let i=1;i<=31;i++){
+                day+=`<option>${i}</option>`
+            }
+            for(let i=1;i<=12;i++){
+                month+=`<option>Tháng ${i}</option>`
+            }
+            for(let i=1900;i<=2020;i++){
+                year+=`<option>${i}</option>`
+            }
+            row_day.html(day);
+            row_month.html(month);
+            row_year.html(year);
+        })
+
+
+
+
+
+    </script>
+
 </body>
 
 </html>
