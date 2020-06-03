@@ -657,7 +657,7 @@ $color_text: #2da289;
   }
 }
 
-.profile {
+.cart-pending {
   .content {
     margin-top: 42px;
     .col-left {
@@ -801,14 +801,14 @@ $color_text: #2da289;
     align-items: center;
     font-weight: 500;
     font-size: 16px;
-    
+    label{cursor: pointer; display: block}
     .cho-xac-nhan {
       width: 50%;
       text-align: center;
       border-right: 1px solid #c4c4c4;
-      &.active{
+      &.active {
         color: $color_background;
-        .border{
+        .border {
           position: absolute;
           border-bottom: 2px solid $color_background;
           width: 50%;
@@ -819,14 +819,75 @@ $color_text: #2da289;
     .da-giao {
       width: 50%;
       text-align: center;
-      &.active{
+      &.active {
         color: $color_background;
-        .border{
+        .border {
+          position: absolute;
           border-bottom: 2px solid $color_background;
+          width: 50%;
+          bottom: 0;
         }
       }
     }
   }
-  .item {
+  .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    .action {
+      display: flex;
+      flex-direction: column;
+      button {
+        width: 120px;
+        height: 38px;
+        border-radius: 34px;
+      }
+      .submit {
+        background: $color_background;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 14px;
+        border: none;
+        @include outline-none();
+      }
+      .unsubmit {
+        color: $color_background;
+        font-weight: 600;
+        font-size: 16px;
+        border: 1px solid $color_background;
+        background: #fff;
+        @include outline-none();
+      }
+    }
+    .aa_name {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .aa_bottom {
+      color: #000;
+    }
+    .price {
+      font-weight: 600;
+      font-size: 20px;
+      color: $color_text;
+    }
+    .quantity {
+      font-size: 16px;
+      .number {
+        font-weight: 500;
+        font-size: 19px;
+      }
+    }
+  }
+  #da-giao{
+    .action{
+      .submit{margin-bottom: 0px;}
+    }
   }
 }
