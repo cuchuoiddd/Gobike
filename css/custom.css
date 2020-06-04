@@ -23,7 +23,7 @@
   border: 1px solid;
   padding: 11px 0;
   color: white !important;
-  background-color: #1b9b7f;
+  background-color: #1b9b7f !important;
 }
 
 .menu .btn-register:hover {
@@ -55,8 +55,14 @@
   font-size: 12px;
 }
 
-.menu .user {
-  color: #2da289 !important;
+.menu .user button {
+  border: none;
+  background: #fff;
+  color: #1b9b7f;
+}
+
+.menu .user button:focus {
+  outline: none;
 }
 
 .navbar {
@@ -521,6 +527,55 @@
   background: no-repeat;
 }
 
+.product-detail .detail-right .intro {
+  margin-top: 38px;
+  width: 92%;
+}
+
+.product-detail .detail-right .intro p {
+  margin-bottom: 2px;
+}
+
+.product-detail .detail-right .intro .intro-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+.product-detail .detail-right .intro .intro-title .p1 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+.product-detail .detail-right .intro .intro-title .p2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+.product-detail .detail-right .intro .intro-title .active {
+  position: relative;
+  color: #1b9b7f;
+}
+
+.product-detail .detail-right .intro .intro-title .active .line1 {
+  position: absolute;
+  border: 1px solid #1b9b7f;
+  width: 100%;
+  bottom: -5px;
+}
+
+.product-detail .detail-right .intro p {
+  font-size: 16px;
+  text-align: justify;
+  color: #000000;
+}
+
 .product-detail .main-slider {
   width: 100%;
 }
@@ -803,6 +858,7 @@
 
 .cart-pending .content {
   margin-top: 42px;
+  min-height: 580px;
 }
 
 .cart-pending .content .col-left {
@@ -845,6 +901,7 @@
   padding-left: 57px;
   padding-right: 0;
   width: 73%;
+  min-height: 580px;
 }
 
 .cart-pending .content .cmt {
@@ -973,6 +1030,11 @@
 
 .cart-pending .content .info .year {
   width: 30%;
+}
+
+.cart-pending .content .cart-empty {
+  text-align: center;
+  margin-top: 42px;
 }
 
 .cart-pending .status {
@@ -1116,5 +1178,94 @@
 
 .cart-pending #da-giao .action .submit {
   margin-bottom: 0px;
+}
+
+.cart-pending #da-giao .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cart-pending #da-giao .time input {
+  width: 30%;
+  width: 43px;
+  height: 43px;
+  border: 1px solid #d9d9d9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+}
+
+.cart-pending #da-giao .time span {
+  font-size: 12px;
+  color: #000;
+}
+
+.cart-pending #da-giao .time .hour {
+  margin-right: 14px;
+  text-align: center;
+}
+
+.cart-pending #da-giao .time .minute {
+  margin-right: 14px;
+  text-align: center;
+}
+
+.cart-pending #da-giao .time .second {
+  text-align: center;
+}
+
+@media screen and (max-width: 1444px) and (min-width: 1200px) {
+  .tram-xe .maps {
+    width: 50%;
+  }
+  .tram-xe .col-45 {
+    max-width: 50%;
+  }
+  .tram-xe .item {
+    height: 175px;
+    position: relative;
+  }
+  .tram-xe .item .left img {
+    width: 255px;
+  }
+  .tram-xe .item .right .address {
+    margin-bottom: 10px;
+  }
+  .tram-xe .item .right .phone {
+    margin-bottom: 10px;
+  }
+  .tram-xe .item .right .btn-shop {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+  }
+  .register_login .col-left img {
+    width: 100%;
+  }
+  .register_login .title1 {
+    margin-top: 50px;
+  }
+  .register_login .col-right {
+    padding: 0 130px 0 70px;
+  }
+  .register_login .description {
+    margin-bottom: 20px;
+  }
+  .register_login .col-right .form .tab-content {
+    margin-top: 30px;
+  }
+  .register_login .col-right .form .input-group {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=custom.css.map */

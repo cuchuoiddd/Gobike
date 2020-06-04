@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.min.css">
     <title>Gobike</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -38,12 +38,12 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="./tram-xe.html">Trạm xe</a></li>
-                            <li><a href="#features">Tính năng</a></li>
-                            <li><a href="#faq">Hỏi đáp</a></li>
-                            <li><a href="#download">Tải xuống</a></li>
-                            <li><a href="#contact">Liên hệ</a></li>
+                            <li><a href="./index.html#features">Tính năng</a></li>
+                            <li><a href="./index.html#faq">Hỏi đáp</a></li>
+                            <li><a href="./index.html#download">Tải xuống</a></li>
+                            <li><a href="./index.html#contact">Liên hệ</a></li>
                             <li>
-                                <a href="./product-detail.html">
+                                <a href="./cart-pending.html">
                                     <div class="header_main_cart">
                                         <img class="cart_icon" src="./images/images/shopping-cart.png" alt="">
                                         <span class="total_cart">1</span>
@@ -51,8 +51,14 @@
                                     <div class="clear"></div>
                                 </a>
                             </li>
-                            <li>
-                                <a class="user" href="">Xin chào, bánh bèo</a>
+                            <li class="user">
+                                <div class="dropdown">
+                                    <button class="" type="button" data-toggle="dropdown">Xin chào, bánh bèo</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Thông tin cá nhân</a></li>
+                                        <li><a href="#">Đăng xuất</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -158,20 +164,130 @@
                                 <div class="row social">
                                     <div class="col-12 social_child">
                                         <div class="">
-                                            <a href=""><button><img src="./images/images/facebook.png" alt=""></button></a>
+                                            <a href=""><button><img src="./images/images/facebook.png"
+                                                        alt=""></button></a>
                                         </div>
                                         <div class="">
-                                            <a href=""><button><img src="./images/images/instagram.png" alt=""></button></a>
+                                            <a href=""><button><img src="./images/images/instagram.png"
+                                                        alt=""></button></a>
                                         </div>
                                         <div class="">
-                                            <a href=""><button><img src="./images/images/twitter.png" alt=""></button></a>
+                                            <a href=""><button><img src="./images/images/twitter.png"
+                                                        alt=""></button></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            fsấ
+                        <div class="row intro">
+                            <div class="intro-title">
+                                <div class="active p1" style="margin-left: 23%;">
+                                    Description
+                                    <div class="line1"></div>
+                                </div>
+                                <div class="p2" style="margin-left: 10%;">
+                                    Additional information
+                                    <div class="line1"></div>
+                                </div>
+                            </div>
+                            <div id="p1">
+                                <p>
+                                    Bottom Bracket: Sealed cartridge
+                                </p>
+                                <p>
+                                    Brakes: Tektro M280 mechanical disc, 160mm/140mm rotor
+                                </p>
+                                <p>
+                                    Cassette: Shimano Altus, 11-32T, 8-speed
+                                </p>
+                                <p>
+                                    Chain: KMC HV700, 8-speed
+                                </p>
+                                <p>
+                                    Crankset: Shimano Tourney, 48/38/28T w/ chainguard
+                                </p>
+                                <p>
+                                    Fork: Hi-Ten steel, straight bladed w/ lowrider mounts
+                                </p>
+                                <p>
+                                    Frame: Fuji A2-SL custom butted alloy w/ 1-1/8″ semi-integrated threadless headtube,
+                                    internal shift cable routing, post disc mount, forged dropouts and replaceable
+                                    hanger
+                                </p>
+                                <p>
+                                    Front Derailleur: Shimano Tourney
+                                </p>
+                                <p>
+                                    Grips/Tape: Oval Concepts Comfort, Kraton
+                                </p>
+                                <p>
+                                    Handlebar: Oval Concepts riser, 6061 alloy, 20mm rise, 6° sweep, 25.4 clamp
+                                </p>
+                                <p>
+                                    Headset: FSA, 1-1/8″ semi-integrated threadless
+                                </p>
+                                <p>
+                                    Levers: Shimano EF500, 4-finger
+                                </p>
+                                <p>
+                                    Pedals: Resin platform
+                                </p>
+                                <p>
+                                    Rack Mounts: Yes
+                                </p>
+                                <p>
+                                    Rear Derailleur: Shimano Acera, 8-speed
+                                </p>
+                                <p>
+                                    Saddle: Selle Royal Shadow
+                                </p>
+                                <p>
+                                    Seatpost: Oval Concepts, 6061 alloy, 27.2mm diameter
+                                </p>
+                                <p>
+                                    Shifters: Shimano Altus EF500, EZ Fire 8-speed
+                                </p>
+                                <p>
+                                    Stem: Oval Concepts, forged alloy, +/-20°
+                                </p>
+                            </div>
+                            <div id="p2" style="display: none;">
+                                <p>
+                                    Chain: KMC HV700, 8-speed
+                                </p>
+                                <p>
+                                    Crankset: Shimano Tourney, 48/38/28T w/ chainguard
+                                </p>
+                                <p>
+                                    Fork: Hi-Ten steel, straight bladed w/ lowrider mounts
+                                </p>
+                                <p>
+                                    Frame: Fuji A2-SL custom butted alloy w/ 1-1/8″ semi-integrated threadless headtube,
+                                    internal shift cable routing, post disc mount, forged dropouts and replaceable
+                                    hanger
+                                </p>
+                                <p>
+                                    Front Derailleur: Shimano Tourney
+                                </p>
+                                <p>
+                                    Grips/Tape: Oval Concepts Comfort, Kraton
+                                </p>
+                                <p>
+                                    Handlebar: Oval Concepts riser, 6061 alloy, 20mm rise, 6° sweep, 25.4 clamp
+                                </p>
+                                <p>
+                                    Headset: FSA, 1-1/8″ semi-integrated threadless
+                                </p>
+                                <p>
+                                    Levers: Shimano EF500, 4-finger
+                                </p>
+                                <p>
+                                    Pedals: Resin platform
+                                </p>
+                                <p>
+                                    Rack Mounts: Yes
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,53 +300,109 @@
                         <div class="product-slider owl-carousel owl-theme">
                             <div class="item">
                                 <div class="card text-center">
-                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png"
+                                            class="card-img-top" alt="..."></a>
                                     <div class="card-body">
-                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <a href="./product-detail.html">
+                                            <h5 class="card-title">Blue CS</h5>
+                                        </a>
                                         <p class="card-text">250.000 VNĐ / giờ</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="card text-center">
-                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png"
+                                            class="card-img-top" alt="..."></a>
                                     <div class="card-body">
-                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <a href="./product-detail.html">
+                                            <h5 class="card-title">Blue CS</h5>
+                                        </a>
                                         <p class="card-text">250.000 VNĐ / giờ</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="card text-center">
-                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png"
+                                            class="card-img-top" alt="..."></a>
                                     <div class="card-body">
-                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <a href="./product-detail.html">
+                                            <h5 class="card-title">Blue CS</h5>
+                                        </a>
                                         <p class="card-text">250.000 VNĐ / giờ</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="card text-center">
-                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png"
+                                            class="card-img-top" alt="..."></a>
                                     <div class="card-body">
-                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <a href="./product-detail.html">
+                                            <h5 class="card-title">Blue CS</h5>
+                                        </a>
                                         <p class="card-text">250.000 VNĐ / giờ</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="card text-center">
-                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png" class="card-img-top" alt="..."></a>
+                                    <a href="./product-detail.html"><img src="./images/images/product_slide.png"
+                                            class="card-img-top" alt="..."></a>
                                     <div class="card-body">
-                                        <a href="./product-detail.html"><h5 class="card-title">Blue CS</h5></a>
+                                        <a href="./product-detail.html">
+                                            <h5 class="card-title">Blue CS</h5>
+                                        </a>
                                         <p class="card-text">250.000 VNĐ / giờ</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
+        </div>
+        <div class="download" id="download">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
+                    <h1>TẢI XUỐNG</h1>
+                    <h5>Ứng dụng có sẵn trên các kho ứng dụng của Android và iOS. Tải xuống miễn phí ngay dưới đây.</h5>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 download_items">
+                    <a href="https://www.apple.com/itunes/"><img src="images/Download_on_the_App_.png" alt=""></a>
+                    <a href="https://play.google.com/store"><img src="images/GooglePlay.png" alt="" id="ggplay"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="contact" id="contact">
+
+            <div class="container">
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 header">
+                    <h1>LIÊN HỆ</h1>
+                    <p><b>Địa chỉ:</b> &nbsp; 264 Đội Cấn, Liễu Giai, Ba Đình, Hà Nội</p>
+                    <p><b>Email:</b> &nbsp; gobike@gmail.com</p>
+                    <p><b>Sđt:</b> &nbsp; +84 97 260 85 42</p>
+                    <p><b>Website:</b> &nbsp; gobike.com</p>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d930.9772802276518!2d105.8157693!3d21.036322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab128a5877fb%3A0x25ffe241d7282db2!2zVsawxqFuZyBRdeG7kWMgU8OhbmcgVOG6oW8gRlBUIEFyZW5hIE11bHRpbWVkaWE!5e0!3m2!1svi!2s!4v1561442925366!5m2!1svi!2s"
+                        width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>© 2019 Gobike. All rights reserved.</p>
         </div>
     </div>
     <script src="js/script.js"></script>
@@ -252,24 +424,21 @@
         });
 
         $('.product-slider').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:4
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
             }
-        }
-    })
-        
-
-
+        })
 
         $(document).ready(function () {
             $('#qty_input').prop('disabled', true);
@@ -283,6 +452,19 @@
                 }
             });
         });
+
+        $(document).on('click','.intro .intro-title .p1',function(){
+            $(this).addClass('active');
+            $('.intro .intro-title .p2').removeClass('active');
+            $('.intro #p1').show();
+            $('.intro #p2').hide();
+        })
+        $(document).on('click','.intro .intro-title .p2',function(){
+            $(this).addClass('active');
+            $('.intro .intro-title .p1').removeClass('active');
+            $('.intro #p1').hide();
+            $('.intro #p2').show();
+        })
 
     </script>
 </body>

@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.min.css">
     <title>Gobike</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -34,12 +34,12 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="./tram-xe.html">Trạm xe</a></li>
-                            <li><a href="#features">Tính năng</a></li>
-                            <li><a href="#faq">Hỏi đáp</a></li>
-                            <li><a href="#download">Tải xuống</a></li>
-                            <li><a href="#contact">Liên hệ</a></li>
+                            <li><a href="./index.html#features">Tính năng</a></li>
+                            <li><a href="./index.html#faq">Hỏi đáp</a></li>
+                            <li><a href="./index.html#download">Tải xuống</a></li>
+                            <li><a href="./index.html#contact">Liên hệ</a></li>
                             <li>
-                                <a href="./product-detail.html">
+                                <a href="./cart-pending.html">
                                     <div class="header_main_cart">
                                         <img class="cart_icon" src="./images/images/shopping-cart.png" alt="">
                                         <span class="total_cart">1</span>
@@ -47,8 +47,14 @@
                                     <div class="clear"></div>
                                 </a>
                             </li>
-                            <li>
-                                <a class="user" href="">Xin chào, bánh bèo</a>
+                            <li  class="user">
+                                <div class="dropdown">
+                                    <button class="" type="button" data-toggle="dropdown">Xin chào, bánh bèo</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Thông tin cá nhân</a></li>
+                                        <li><a href="#">Đăng xuất</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -266,6 +272,45 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="download" id="download">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
+                    <h1>TẢI XUỐNG</h1>
+                    <h5>Ứng dụng có sẵn trên các kho ứng dụng của Android và iOS. Tải xuống miễn phí ngay dưới đây.</h5>
+                </div>
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 download_items">
+                    <a href="https://www.apple.com/itunes/"><img src="images/Download_on_the_App_.png" alt=""></a>
+                    <a href="https://play.google.com/store"><img src="images/GooglePlay.png" alt="" id="ggplay"></a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            
+            <div class="container">
+                
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 header">
+                    <h1>LIÊN HỆ</h1>
+                    <p><b>Địa chỉ:</b> &nbsp; 264 Đội Cấn, Liễu Giai, Ba Đình, Hà Nội</p>
+                    <p><b>Email:</b> &nbsp; gobike@gmail.com</p>
+                    <p><b>Sđt:</b> &nbsp; +84 97 260 85 42</p>
+                    <p><b>Website:</b> &nbsp; gobike.com</p>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d930.9772802276518!2d105.8157693!3d21.036322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab128a5877fb%3A0x25ffe241d7282db2!2zVsawxqFuZyBRdeG7kWMgU8OhbmcgVOG6oW8gRlBUIEFyZW5hIE11bHRpbWVkaWE!5e0!3m2!1svi!2s!4v1561442925366!5m2!1svi!2s" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p>© 2019 Gobike. All rights reserved.</p>
         </div>
     </div>
     <script src="js/script.js"></script>

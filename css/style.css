@@ -27,7 +27,8 @@ body {
     font-weight: bold;
 }
 .menu img {
-    height: 130%;
+    width: 130px;
+    height: 42.22px;
 }
 .navbar-default {
     background-color: white;
@@ -416,6 +417,8 @@ body {
     .navbar-right {
         float: right!important;
         margin-right: 0;
+        display: flex;
+        align-items: center;
     }
     
 }

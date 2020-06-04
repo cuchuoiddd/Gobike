@@ -12,14 +12,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.min.css">
     <title>Gobike</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" class="register_login">
-    <div class="">
+<body data-target=".navbar" data-offset="50">
+    <div class="register_login">
         <div class="menu" id="gobike">
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
@@ -34,10 +34,10 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="./tram-xe.html">Trạm xe</a></li>
-                            <li><a href="#features">Tính năng</a></li>
-                            <li><a href="#faq">Hỏi đáp</a></li>
-                            <li><a href="#download">Tải xuống</a></li>
-                            <li><a href="#contact">Liên hệ</a></li>
+                            <li><a href="./index.html#features">Tính năng</a></li>
+                            <li><a href="./index.html#faq">Hỏi đáp</a></li>
+                            <li><a href="./index.html#download">Tải xuống</a></li>
+                            <li><a href="./index.html#contact">Liên hệ</a></li>
                             <li class="li-login"><a class="btn-login text-center" href="#dang_nhap">Đăng nhập</a></li>
                             <li class="li-register"><a class="btn-register text-center" href="#dang_ky">Đăng ký</a></li>
                         </ul>
@@ -47,7 +47,7 @@
         </div>
         <div class="" style="margin-top:70px">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-left">
                     <img src="./images/images/Frame.png" alt="" class="frame">
                 </div>
                 <div class="col-md-6 col-right">
@@ -59,8 +59,8 @@
                     </div>
                     <div class="form">
                         <ul class="nav nav-tabs">
-                            <li><a data-toggle="tab" href="#dang_ky">Đăng ký</a></li>
-                            <li class="active"><a data-toggle="tab" href="#dang_nhap">Đăng nhập</a></li>
+                            <li class="nav-login"><a data-toggle="tab" href="#dang_ky">Đăng ký</a></li>
+                            <li class="nav-register active"><a data-toggle="tab" href="#dang_nhap">Đăng nhập</a></li>
                         </ul>
 
                         <div class="tab-content">
@@ -143,11 +143,38 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <p>© 2019 Gobike. All rights reserved.</p>
-        </div>
+        
     </div>
     <script src="js/script.js"></script>
+    <script>
+        var str = location.href.split('#')[1];
+        if(str == 'dang_ky'){
+            $('.nav-register').addClass('active');
+            $('.nav-login').removeClass('active');
+            $('#dang_ky').addClass('active in');
+            $('#dang_nhap').removeClass('active in');
+        }
+        if(str == 'dang_nhap'){
+            $('.nav-login').addClass('active');
+            $('.nav-register').removeClass('active');
+            $('#dang_nhap').addClass('active in');
+            $('#dang_ky').removeClass('active in');
+        }
+
+        console.log(str);
+        $('.menu .btn-login').on('click',function(){
+            $('.nav-login').addClass('active');
+            $('.nav-register').removeClass('active');
+            $('#dang_nhap').addClass('active in');
+            $('#dang_ky').removeClass('active in');
+        })
+        $('.menu .btn-register').on('click',function(){
+            $('.nav-register').addClass('active');
+            $('.nav-login').removeClass('active');
+            $('#dang_ky').addClass('active in');
+            $('#dang_nhap').removeClass('active in');
+        })
+    </script>
 </body>
 
 </html>
